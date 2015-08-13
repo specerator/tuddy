@@ -29,12 +29,3 @@ client.pull('myGithub').then((stories) => {
 });
 
 ```
-
-**If you would like to sync your Trello to your Github**
-
-```javascript
-
-client.sync('myTrello', 'myGithub');
-
-
-```
