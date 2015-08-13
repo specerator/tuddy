@@ -1,0 +1,29 @@
+POST /1/cards
+host: api.trello.com
+accept: application/json
+content-type: application/json
+body: {\"name\":\"test2\",\"idList\":\"55ccc4a5e08262688ef56a96\",\"key\":\"87105c2d4268dd05af77c83b64326f8a\",\"token\":\"e6691ee3114053746f53504df00a736407b985ce3cd0b2957012fa702ce83065\"}
+
+HTTP/1.1 200 undefined
+cache-control: max-age=0, must-revalidate, no-cache, no-store
+x-content-type-options: nosniff
+strict-transport-security: max-age=15768000
+x-xss-protection: 1; mode=block
+x-frame-options: DENY
+x-trello-version: 1.452.0
+x-trello-environment: Production
+access-control-allow-origin: *
+access-control-allow-methods: GET, PUT, POST, DELETE
+x-server-time: 1439483770058
+expires: Thu, 01 Jan 1970 00:00:00
+content-type: application/json; charset=utf-8
+content-length: 793
+etag: W/"319-db080443"
+vary: Accept-Encoding
+date: Thu, 13 Aug 2015 16:36:10 GMT
+set-cookie: visid_incap_168562=suRZuHt/RZKmaP9lVGEYXnnHzFUAAAAAQUIPAAAAAADCyZFJhdH0Zzh3XZpy4PVw; expires=Sat, 12 Aug 2017 09:23:05 GMT; path=/; Domain=.trello.com
+set-cookie: incap_ses_222_168562=57vzAxf4WyurzazYg7QUA3nHzFUAAAAAEO5M5o04SWX8bEpzoiSJ8A==; path=/; Domain=.trello.com
+x-iinfo: 5-4400947-4399274 PNNN RT(1439483767326 132) q(0 0 0 -1) r(17 17) U6
+x-cdn: Incapsula
+
+{"id":"55ccc778590aa7435ca2064d","badges":{"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"comments":0,"attachments":0,"description":false,"due":null},"checkItemStates":[],"closed":false,"dateLastActivity":"2015-08-13T16:36:08.776Z","desc":"","descData":{"emoji":{}},"due":null,"email":"tuddy2+55ccc162f6f892ec7d80b27f+55ccc778590aa7435ca2064d+f0be33478614f53669fcfc4e4cc43fc9c6fe06d5@boards.trello.com","idBoard":"55ccc49df22b549c64f3b91e","idChecklists":[],"idLabels":[],"idList":"55ccc4a5e08262688ef56a96","idMembers":[],"idShort":4,"idAttachmentCover":null,"manualCoverAttachment":false,"labels":[],"name":"test2","pos":163839,"shortUrl":"https://trello.com/c/6kcAzvRV","url":"https://trello.com/c/6kcAzvRV/4-test2","stickers":[]}

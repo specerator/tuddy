@@ -1,0 +1,30 @@
+GET /1/boards/55ccc49df22b549c64f3b91e/cards/all?key=87105c2d4268dd05af77c83b64326f8a&token=e6691ee3114053746f53504df00a736407b985ce3cd0b2957012fa702ce83065
+host: api.trello.com
+accept: application/json
+content-type: application/json
+body: {\"key\":\"87105c2d4268dd05af77c83b64326f8a\",\"token\":\"e6691ee3114053746f53504df00a736407b985ce3cd0b2957012fa702ce83065\"}
+
+HTTP/1.1 200 undefined
+cache-control: max-age=0, must-revalidate, no-cache, no-store
+x-content-type-options: nosniff
+strict-transport-security: max-age=15768000
+x-xss-protection: 1; mode=block
+x-frame-options: DENY
+x-trello-version: 1.452.0
+x-trello-environment: Production
+set-cookie: dsc=aac6773ecb83ae3703ff30e9d5ca899cf28029c02bcfdcb205a144292e57e267; Path=/; Expires=Sun, 16 Aug 2015 16:36:10 GMT; Secure
+set-cookie: visid_incap_168562=4N7pAMvARRSq6aAdcNZycHnHzFUAAAAAQUIPAAAAAAAvP8hHKw8k8R/J43fkWELl; expires=Sat, 12 Aug 2017 09:23:05 GMT; path=/; Domain=.trello.com
+set-cookie: incap_ses_222_168562=icjEYoFYEkJ/z6zYg7QUA3nHzFUAAAAArUTugj74ED+l0FkFWXYSrg==; path=/; Domain=.trello.com
+access-control-allow-origin: *
+access-control-allow-methods: GET, PUT, POST, DELETE
+x-server-time: 1439483770593
+expires: Thu, 01 Jan 1970 00:00:00
+content-type: application/json; charset=utf-8
+content-length: 3336
+etag: W/"xAJwanYhFvx9aiZ298dsyw=="
+vary: Accept-Encoding
+date: Thu, 13 Aug 2015 16:36:10 GMT
+x-iinfo: 10-8485625-8453154 PNNN RT(1439483769294 145) q(0 0 0 -1) r(3 3) U13
+x-cdn: Incapsula
+
+[{"id":"55ccc4a9d3294f7a68cc90f3","checkItemStates":[],"closed":false,"dateLastActivity":"2015-08-13T16:24:09.303Z","desc":"","descData":null,"idBoard":"55ccc49df22b549c64f3b91e","idList":"55ccc4a5e08262688ef56a96","idMembersVoted":[],"idShort":1,"idAttachmentCover":null,"manualCoverAttachment":false,"idLabels":[],"name":"test1","pos":65535,"shortLink":"ZNUzB6mn","badges":{"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"comments":0,"attachments":0,"description":false,"due":null},"due":null,"email":"tuddy2+55ccc162f6f892ec7d80b27f+55ccc4a9d3294f7a68cc90f3+8ce2ddff99f7a94cb079f13144069242ecc8ed54@boards.trello.com","idChecklists":[],"idMembers":[],"labels":[],"shortUrl":"https://trello.com/c/ZNUzB6mn","subscribed":false,"url":"https://trello.com/c/ZNUzB6mn/1-test1"},{"id":"55ccc4aa7550602f3d6b0571","checkItemStates":[],"closed":false,"dateLastActivity":"2015-08-13T16:24:10.859Z","desc":"","descData":null,"idBoard":"55ccc49df22b549c64f3b91e","idList":"55ccc4a5e08262688ef56a96","idMembersVoted":[],"idShort":2,"idAttachmentCover":null,"manualCoverAttachment":false,"idLabels":[],"name":"test2","pos":131071,"shortLink":"hJOLWPMO","badges":{"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"comments":0,"attachments":0,"description":false,"due":null},"due":null,"email":"tuddy2+55ccc162f6f892ec7d80b27f+55ccc4aa7550602f3d6b0571+2085ebf29bd3de1102493fae4191a62da16a4b44@boards.trello.com","idChecklists":[],"idMembers":[],"labels":[],"shortUrl":"https://trello.com/c/hJOLWPMO","subscribed":false,"url":"https://trello.com/c/hJOLWPMO/2-test2"},{"id":"55ccc778c605511b4dafd67d","checkItemStates":[],"closed":false,"dateLastActivity":"2015-08-13T16:36:08.527Z","desc":"","descData":null,"idBoard":"55ccc49df22b549c64f3b91e","idList":"55ccc4a5e08262688ef56a96","idMembersVoted":[],"idShort":3,"idAttachmentCover":null,"manualCoverAttachment":false,"idLabels":[],"name":"test1","pos":147455,"shortLink":"WoSysVwC","badges":{"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"comments":0,"attachments":0,"description":false,"due":null},"due":null,"email":"tuddy2+55ccc162f6f892ec7d80b27f+55ccc778c605511b4dafd67d+cb542b213ba83706f4e9c8c3a691b4b43c73abec@boards.trello.com","idChecklists":[],"idMembers":[],"labels":[],"shortUrl":"https://trello.com/c/WoSysVwC","subscribed":false,"url":"https://trello.com/c/WoSysVwC/3-test1"},{"id":"55ccc778590aa7435ca2064d","checkItemStates":[],"closed":false,"dateLastActivity":"2015-08-13T16:36:08.776Z","desc":"","descData":null,"idBoard":"55ccc49df22b549c64f3b91e","idList":"55ccc4a5e08262688ef56a96","idMembersVoted":[],"idShort":4,"idAttachmentCover":null,"manualCoverAttachment":false,"idLabels":[],"name":"test2","pos":163839,"shortLink":"6kcAzvRV","badges":{"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"comments":0,"attachments":0,"description":false,"due":null},"due":null,"email":"tuddy2+55ccc162f6f892ec7d80b27f+55ccc778590aa7435ca2064d+f0be33478614f53669fcfc4e4cc43fc9c6fe06d5@boards.trello.com","idChecklists":[],"idMembers":[],"labels":[],"shortUrl":"https://trello.com/c/6kcAzvRV","subscribed":false,"url":"https://trello.com/c/6kcAzvRV/4-test2"}]
