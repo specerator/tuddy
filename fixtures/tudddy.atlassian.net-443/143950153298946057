@@ -1,0 +1,28 @@
+POST /rest/api/2/issue
+host: tudddy.atlassian.net
+authorization: Basic YWRtaW46dHVkZHlwYXNz
+accept: application/json
+content-type: application/json
+body: {\"fields\":{\"summary\":\"test3\",\"project\":{\"key\":\"TUD\"},\"issuetype\":{\"name\":\"Task\"}}}
+
+HTTP/1.1 201 undefined
+server: nginx
+date: Thu, 13 Aug 2015 21:32:12 GMT
+content-type: application/json;charset=UTF-8
+transfer-encoding: chunked
+connection: keep-alive
+x-arequestid: 1052x984x2
+x-asen: SEN-5570487
+set-cookie: JSESSIONID=DBCE8D06267A232CA16F37E953F936CE; Path=/; Secure; HttpOnly
+set-cookie: studio.crowd.tokenkey=""; Domain=.tudddy.atlassian.net; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+set-cookie: studio.crowd.tokenkey=4r2QF0k3NV7S849fxMXHOQ00; Domain=.tudddy.atlassian.net; Path=/; Secure; HttpOnly
+set-cookie: atlassian.xsrf.token=B7HM-M1NA-RPNE-DB50|e5e277bde7f8f4887b973ddf70a48b6450ba9100|lin; Path=/; Secure
+x-seraph-loginreason: OUT, OK
+x-asessionid: 1yo43lb
+x-ausername: admin
+x-atenant-id: tudddy.atlassian.net
+cache-control: no-cache, no-store, no-transform
+x-content-type-options: nosniff
+strict-transport-security: max-age=315360000;includeSubDomains
+
+{"id":"10036","key":"TUD-37","self":"https://tudddy.atlassian.net/rest/api/2/issue/10036"}

@@ -1,0 +1,95 @@
+POST /rest/api/2/search
+host: tudddy.atlassian.net
+authorization: Basic YWRtaW46YWRtaXQxMjM=
+accept: application/json
+content-type: application/json
+body: {}
+
+HTTP/1.1 401 undefined
+server: nginx
+date: Thu, 13 Aug 2015 21:32:14 GMT
+content-type: text/html;charset=UTF-8
+transfer-encoding: chunked
+connection: keep-alive
+x-arequestid: 1052x985x1
+x-asen: SEN-5570487
+set-cookie: JSESSIONID=83AAB2423DC8F6A9930BDC23DB18FC12; Path=/; Secure; HttpOnly
+set-cookie: studio.crowd.tokenkey=""; Domain=.tudddy.atlassian.net; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+set-cookie: studio.crowd.tokenkey=""; Domain=.tudddy.atlassian.net; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+set-cookie: studio.crowd.tokenkey=""; Domain=.tudddy.atlassian.net; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+set-cookie: studio.crowd.tokenkey=""; Domain=.tudddy.atlassian.net; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly
+x-seraph-loginreason: OUT, AUTHENTICATED_FAILED, AUTHENTICATED_FAILED
+www-authenticate: OAuth realm="https%3A%2F%2Ftudddy.atlassian.net"
+x-asessionid: 1boxmhu
+x-content-type-options: nosniff
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+    <title>Unauthorized (401)</title>
+    
+
+
+<!--[if IE]><![endif]-->
+<script type="text/javascript">var contextPath = '';</script>
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager.resource-base-url-pattern"]="\"(?:(?:/s/.*?/_)?/download|//d1ixbz5qgnvms3\\\\.cloudfront\\\\.net/tudddy\\\\.atlassian\\\\.net(?:/s/.*?/_)?/download)\"";
+WRM._unparsedData["jira.webresources:dateFormatProvider.dateFormat"]="{\"meridiem\":[\"AM\",\"PM\"],\"eras\":[\"BC\",\"AD\"],\"months\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"monthsShort\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"weekdaysShort\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"weekdays\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"]}";
+WRM._unparsedData["com.atlassian.jira.ext.calendar:tipDataProvider.tip"]="{\"suppressTip\":false}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:dismissedFlags.flags"]="{\"dismissed\":[]}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:newsletter-signup-tip.newsletterSignup"]="{\"formUrl\":\"https://www.atlassian.com/apis/exact-target/{0}/subscribe?mailingListId=1239131\",\"showNewsletterTip\":false}";
+WRM._unparsedData["com.atlassian.jira.plugins.greenhopper-marketing-plugin:gh-advertising-resources.urls"]="{\"hamlet\":\"https://hamlet.atlassian.com/\",\"lasso\":\"https://id.atlassian.com/\",\"mac\":\"https://my.atlassian.com\"}";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-admin-helper-plugin:notification-event-provider.notification-event-data"]="[{\"id\":1,\"name\":\"Issue Created\",\"isDefault\":true},{\"id\":2,\"name\":\"Issue Updated\"},{\"id\":3,\"name\":\"Issue Assigned\"},{\"id\":4,\"name\":\"Issue Resolved\"},{\"id\":5,\"name\":\"Issue Closed\"},{\"id\":6,\"name\":\"Issue Commented\"},{\"id\":14,\"name\":\"Issue Comment Edited\"},{\"id\":17,\"name\":\"Issue Comment Deleted\"},{\"id\":7,\"name\":\"Issue Reopened\"},{\"id\":8,\"name\":\"Issue Deleted\"},{\"id\":9,\"name\":\"Issue Moved\"},{\"id\":10,\"name\":\"Work Logged On Issue\"},{\"id\":11,\"name\":\"Work Started On Issue\"},{\"id\":12,\"name\":\"Work Stopped On Issue\"},{\"id\":15,\"name\":\"Issue Worklog Updated\"},{\"id\":16,\"name\":\"Issue Worklog Deleted\"},{\"id\":13,\"name\":\"Generic Event\"}]";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-admin-helper-plugin:permissions-provider.permissions-data"]="[{\"permissions\":[{\"name\":\"Administer Projects\",\"id\":\"23\"},{\"name\":\"Browse Projects\",\"id\":\"10\"},{\"name\":\"View Development Tools\",\"id\":\"29\"},{\"name\":\"View Read-Only Workflow\",\"id\":\"45\"}],\"name\":\"Project Permissions\"},{\"permissions\":[{\"name\":\"Create Issues\",\"id\":\"11\"},{\"name\":\"Edit Issues\",\"id\":\"12\"},{\"name\":\"Transition Issues\",\"id\":\"46\"},{\"name\":\"Schedule Issues\",\"id\":\"28\"},{\"name\":\"Move Issues\",\"id\":\"25\"},{\"name\":\"Assign Issues\",\"id\":\"13\"},{\"name\":\"Assignable User\",\"id\":\"17\"},{\"name\":\"Resolve Issues\",\"id\":\"14\"},{\"name\":\"Close Issues\",\"id\":\"18\"},{\"name\":\"Modify Reporter\",\"id\":\"30\"},{\"name\":\"Delete Issues\",\"id\":\"16\"},{\"name\":\"Link Issues\",\"id\":\"21\"},{\"name\":\"Set Issue Security\",\"id\":\"26\"}],\"name\":\"Issue Permissions\"},{\"permissions\":[{\"name\":\"View Voters and Watchers\",\"id\":\"31\"},{\"name\":\"Manage Watchers\",\"id\":\"32\"}],\"name\":\"Voters & Watchers Permissions\"},{\"permissions\":[{\"name\":\"Add Comments\",\"id\":\"15\"},{\"name\":\"Edit All Comments\",\"id\":\"34\"},{\"name\":\"Edit Own Comments\",\"id\":\"35\"},{\"name\":\"Delete All Comments\",\"id\":\"36\"},{\"name\":\"Delete Own Comments\",\"id\":\"37\"}],\"name\":\"Comments Permissions\"},{\"permissions\":[{\"name\":\"Create Attachments\",\"id\":\"19\"},{\"name\":\"Delete All Attachments\",\"id\":\"38\"},{\"name\":\"Delete Own Attachments\",\"id\":\"39\"}],\"name\":\"Attachments Permissions\"},{\"permissions\":[{\"name\":\"Work On Issues\",\"id\":\"20\"},{\"name\":\"Edit Own Worklogs\",\"id\":\"40\"},{\"name\":\"Edit All Worklogs\",\"id\":\"41\"},{\"name\":\"Delete Own Worklogs\",\"id\":\"42\"},{\"name\":\"Delete All Worklogs\",\"id\":\"43\"}],\"name\":\"Time Tracking Permissions\"}]";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-browser-metrics:browser-metrics-integration.scm-commit-id"]="\"1fc98468dfd18a5f35861f5c2ab67219b6b6f2f6\"";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-dnd-attachment-plugin:drag-and-drop-attachment-javascript.upload-limit"]="\"10485760\"";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-dnd-attachment-plugin:drag-and-drop-attachment-javascript.thumbnail-mime-types"]="\"image/png,image/vnd.wap.wbmp,image/x-png,image/jpeg,image/tiff,image/x-tiff,image/bmp,image/gif\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-server-instance-data-provider"]="false";
+WRM._unparsedData["com.atlassian.plugins.atlassian-nps-plugin:atlassian-nps-plugin-resources.is-current-user-jsd-agent-data-provider"]="false";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api.feature-data-provider"]="true";
+WRM._unparsedData["com.atlassian.plugins.browser.metrics.browser-metrics-plugin:browser-metrics.feature-data-provider-legacy"]="true";
+WRM._unparsedData["com.atlassian.plugins.helptips.jira-help-tips:common.JiraHelpTipData"]="{\"anonymous\":true}";
+WRM._unparsedData["com.atlassian.plugins.jira-html5-attach-images:jira-html5-attach-images-resources.resource-uris"]="{\"deployJava.html\":\"/s/en_USrlk0dr/65007/8/2.0.10-D20150420T012152/_/download/resources/com.atlassian.plugins.jira-html5-attach-images:jira-html5-attach-images-resources/deployJava.html\",\"clipboard.jar\":\"/s/en_USrlk0dr/65007/8/2.0.10-D20150420T012152/_/download/resources/com.atlassian.plugins.jira-html5-attach-images:jira-html5-attach-images-resources/clipboard.jar\",\"clipboard-legacy.jar\":\"/s/en_USrlk0dr/65007/8/2.0.10-D20150420T012152/_/download/resources/com.atlassian.plugins.jira-html5-attach-images:jira-html5-attach-images-resources/clipboard-legacy.jar\"}";
+WRM._unparsedData["jira.webresources:avatar-picker.data"]="{\"isEnabled\":false,\"url\":\"/plugins/servlet/redirectToProfile?target=edit-avatar\"}";
+</script>
+<link type="text/css" rel="stylesheet" href="//d1ixbz5qgnvms3.cloudfront.net/tudddy.atlassian.net/s/caf63ac3af5cbe0a34f702420c9b971d-CDN/en_USrlk0dr/65007/8/2/_/download/superbatch/css/batch.css?relative-url=true" media="all">
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="//d1ixbz5qgnvms3.cloudfront.net/tudddy.atlassian.net/s/3d14eca8b3dd11958cbba236a32bd906-CDN/en_USrlk0dr/65007/8/2/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9&amp;relative-url=true" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="//d1ixbz5qgnvms3.cloudfront.net/tudddy.atlassian.net/s/0a1988c5c757d7b0f3e319a0148079de-CDN/en_USrlk0dr/65007/8/e7ccf24fca9924a79dfdd8a4bc1efd6d/_/download/contextbatch/css/atl.general,jira.global/batch.css?relative-url=true&amp;jag_disabled_marketing=true" media="all">
+<link type="text/css" rel="stylesheet" href="//d1ixbz5qgnvms3.cloudfront.net/tudddy.atlassian.net/s/b5bc308d6db545594b109a7964e5cae4-CDN/en_USrlk0dr/65007/8/f2bbf2304b7ce03573ef06ef18536b37/_/download/contextbatch/css/jira.general/batch.css?relative-url=true" media="all">
+<script type="text/javascript" src="//d1ixbz5qgnvms3.cloudfront.net/tudddy.atlassian.net/s/ebb31fef2caa4ff0003c882357f10d1e-CDN/en_USrlk0dr/65007/8/2/_/download/superbatch/js/batch.js?atlassian.aui.raphael.disabled=true&amp;locale=en-US" ></script>
+<script type="text/javascript" src="//d1ixbz5qgnvms3.cloudfront.net/tudddy.atlassian.net/s/0902afef0f6d6dc2ae319c9bd8505ea9-CDN/en_USrlk0dr/65007/8/e7ccf24fca9924a79dfdd8a4bc1efd6d/_/download/contextbatch/js/atl.general,jira.global/batch.js?locale=en-US&amp;jag_disabled_marketing=true" ></script>
+<script type="text/javascript" src="//d1ixbz5qgnvms3.cloudfront.net/tudddy.atlassian.net/s/23885855865ed26577cf47a4c3cc7637-CDN/en_USrlk0dr/65007/8/f2bbf2304b7ce03573ef06ef18536b37/_/download/contextbatch/js/jira.general/batch.js?locale=en-US" ></script>
+
+<script type="text/javascript" src="/rest/api/1.0/shortcuts/65007/4c3c8476eba61861145b9f1a971e6585/shortcuts.js"></script>
+
+
+    <meta name="application-name" content="JIRA" data-name="jira" data-version="6.5-OD-08-001">
+</head>
+<body id="jira" class="aui-layout aui-style-default page-type-message"  data-version="6.5-OD-08-001" >
+    <div class="aui-page-panel"><div class="aui-page-panel-inner">
+            <section class="aui-page-panel-content">
+                    <header class="aui-page-header"><div class="aui-page-header-inner">
+                            <div class="aui-page-header-main">
+                                    <h1>Unauthorized (401)</h1>
+                                </div><!-- .aui-page-header-main -->
+                        </div><!-- .aui-page-header-inner --></header><!-- .aui-page-header -->
+                    <div class="aui-message aui-message-warning warning">
+                            <p>Encountered a <code>&quot;401 - Unauthorized&quot;</code> error while loading this page.</p>
+                            <p><a href="/secure/MyJiraHome.jspa">Go to JIRA home</a></p>
+                        </div>
+                </section><!-- .aui-page-panel-content -->
+        </div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel -->
+</body>
+</html>

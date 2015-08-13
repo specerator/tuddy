@@ -10,9 +10,11 @@
 
 var client = new tuddy();
 
-client.registerIntegration({ name: 'myTello', type: 'trello', token: 'a1b2c3'});
+client.registerIntegration({ name: 'myTello', type: 'trello', key: '', token: '', board_id: ''});
 
-client.registerIntegration({ name: 'myGithub', type: 'github', token: 'a1b2c3'});
+client.registerIntegration({ name: 'myGithub', type: 'github', user: '', repo: '', access_token: ''});
+
+client.registerIntegration({ name: 'myJira', type: 'jira', host: '', username: '', password: ''});
 
 ```
 
@@ -25,6 +27,10 @@ client.pull('myTrello').then((stories) => {
 });
 
 client.pull('myGithub').then((stories) => {
+   console.log(stories);
+});
+
+client.pull('myJira').then((stories) => {
    console.log(stories);
 });
 

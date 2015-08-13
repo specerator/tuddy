@@ -1,9 +1,0 @@
-POST /1/cards
-host: api.trello.com
-accept: application/json
-content-type: application/json
-body: {\"name\":\"test1\",\"idList\":\"55ccc4a5e08262688ef56a96\",\"key\":\"87105c2d4268dd05af77c83b64326f8a\",\"token\":\"08ba7b31356c8f61ffc9eeebe4e7fa1e6c02ca722221b20175d35253d6dd7f04\"}
-
-HTTP/1.1 401 undefined
-cache-control: max-age=0, must-revalidate, no-cache, no-store
-x-content-type-options: nosniff
