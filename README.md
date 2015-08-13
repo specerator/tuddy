@@ -1,6 +1,6 @@
 # Tuddy
 
-*Export, import, synchronie, stories, tasks, todos, such as Trello, Pivotal Tracker, JIRA, Github, etc.*
+*Export, import, synchronize, stories, tasks, todos, such as Trello, Pivotal Tracker, JIRA, Github, etc.*
 
 ```javascript
 
