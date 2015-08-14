@@ -1,0 +1,29 @@
+POST /repos/tudddy/tuddy/issues?access_token=c136002525ae2a82dec9109c304167226f8f7e7e
+content-type: application/json
+host: api.github.com
+accept: application/json
+body: {\"name\":\"test3\",\"story_type\":\"feature\"}
+
+HTTP/1.1 422 undefined
+server: GitHub.com
+date: Fri, 14 Aug 2015 02:23:34 GMT
+content-type: application/json; charset=utf-8
+content-length: 138
+status: 422 Unprocessable Entity
+x-ratelimit-limit: 5000
+x-ratelimit-remaining: 4999
+x-ratelimit-reset: 1439522614
+x-oauth-scopes: gist, repo, user
+x-accepted-oauth-scopes: 
+x-github-media-type: github.v3
+x-xss-protection: 1; mode=block
+x-frame-options: deny
+content-security-policy: default-src 'none'
+access-control-allow-credentials: true
+access-control-expose-headers: ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+access-control-allow-origin: *
+x-github-request-id: 183D2EF0:3D42:227E3FB:55CD5126
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-content-type-options: nosniff
+
+{"message":"Invalid request.\n\n\"title\" wasn't supplied.","documentation_url":"https://developer.github.com/v3/issues/#create-an-issue"}

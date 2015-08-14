@@ -16,6 +16,7 @@ client.registerIntegration({ name: 'myGithub', type: 'github', user: '', repo: '
 
 client.registerIntegration({ name: 'myJira', type: 'jira', host: '', username: '', password: ''});
 
+client.registerIntegration({ name: 'myPivotal', type: 'pivotal', project: '', token: ''});
 ```
 
 **If you would like to pull data from an integration:**

@@ -1,0 +1,31 @@
+GET /services/v5/projects/1407870/stories
+x-trackertoken: 690eb36760eff666af11c563510fc616
+content-type: application/json
+host: www.pivotaltracker.com
+accept: application/json
+
+HTTP/1.1 200 undefined
+content-type: application/json; charset=utf-8
+transfer-encoding: chunked
+status: 200 OK
+x-tracker-project-version: 8
+x-tracker-pagination-total: 7
+x-tracker-pagination-offset: 0
+x-tracker-pagination-limit: 100
+x-tracker-pagination-returned: 7
+x-ua-compatible: IE=Edge,chrome=1
+etag: "ab2970f033bca56de0866ecedfd8e45f"
+cache-control: max-age=0, private, must-revalidate
+x-request-id: d9c7e8432d92e29d1c291e86d8cbe74b
+x-runtime: 0.052035
+date: Fri, 14 Aug 2015 01:26:55 GMT
+x-rack-cache: miss
+x-powered-by: Phusion Passenger 4.0.41
+server: nginx/1.6.0 + Phusion Passenger 4.0.41
+access-control-allow-origin: *
+access-control-allow-credentials: false
+access-control-allow-methods: GET, POST, PUT, DELETE, OPTIONS
+access-control-allow-headers: X-TrackerToken,DNT,X-Mx-ReqToken,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,X-Tracker-Warn-Unless-Project-Version-Is
+x-tracker-client-pinger-interval: 12
+
+[{"kind":"story","id":101250808,"created_at":"2015-08-13T23:18:17Z","updated_at":"2015-08-13T23:18:17Z","story_type":"feature","name":"test2","current_state":"unscheduled","requested_by_id":1762546,"project_id":1407870,"url":"https://www.pivotaltracker.com/story/show/101250808","owner_ids":[],"labels":[]},{"kind":"story","id":101250806,"created_at":"2015-08-13T23:18:17Z","updated_at":"2015-08-13T23:18:17Z","story_type":"feature","name":"test1","current_state":"unscheduled","requested_by_id":1762546,"project_id":1407870,"url":"https://www.pivotaltracker.com/story/show/101250806","owner_ids":[],"labels":[]},{"kind":"story","id":101250268,"created_at":"2015-08-13T23:07:42Z","updated_at":"2015-08-13T23:07:42Z","story_type":"feature","name":"test1","current_state":"unscheduled","requested_by_id":1762546,"project_id":1407870,"url":"https://www.pivotaltracker.com/story/show/101250268","owner_ids":[],"labels":[]},{"kind":"story","id":101250266,"created_at":"2015-08-13T23:07:41Z","updated_at":"2015-08-13T23:07:41Z","story_type":"feature","name":"test2","current_state":"unscheduled","requested_by_id":1762546,"project_id":1407870,"url":"https://www.pivotaltracker.com/story/show/101250266","owner_ids":[],"labels":[]},{"kind":"story","id":101250140,"created_at":"2015-08-13T23:04:06Z","updated_at":"2015-08-13T23:04:06Z","story_type":"feature","name":"test1","current_state":"unscheduled","requested_by_id":1762546,"project_id":1407870,"url":"https://www.pivotaltracker.com/story/show/101250140","owner_ids":[],"labels":[]},{"kind":"story","id":101249982,"created_at":"2015-08-13T23:00:41Z","updated_at":"2015-08-13T23:00:41Z","story_type":"feature","name":"test1","current_state":"unscheduled","requested_by_id":1762546,"project_id":1407870,"url":"https://www.pivotaltracker.com/story/show/101249982","owner_ids":[],"labels":[]},{"kind":"story","id":101249980,"created_at":"2015-08-13T23:00:41Z","updated_at":"2015-08-13T23:00:41Z","story_type":"feature","name":"test2","current_state":"unscheduled","requested_by_id":1762546,"project_id":1407870,"url":"https://www.pivotaltracker.com/story/show/101249980","owner_ids":[],"labels":[]}]
