@@ -35,4 +35,8 @@ client.pull('myJira').then((stories) => {
    console.log(stories);
 });
 
+client.pull('myPivotal').then((stories) => {
+   console.log(stories);
+});
+
 ```
