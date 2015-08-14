@@ -68,7 +68,7 @@ client.push('myTrello', stories).then((result) => {
 
 Super Common Story Format (SCSF) is an experimental attempt to unify task systems such that a common container format can be used as an interchange format between different systems.
 
-## EXPERIMENAL
+## EXPERIMENTAL
 
 
 |  **Field** | **Description** | **Example** | **JIRA** | **Trello** | **Pivotal** | **GitHub** |
