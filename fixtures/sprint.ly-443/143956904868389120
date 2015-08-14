@@ -1,0 +1,16 @@
+GET /api/products/33921/items.json
+authorization: Basic amVmZit0dWRkeUBsb2lzZWxsZXMuY29tOldIQ1J2eGRqRTZhcHRuQmZqWjgzWldhVlFFam43R2VG
+host: sprint.ly
+
+HTTP/1.1 200 undefined
+content-type: application/json
+date: Fri, 14 Aug 2015 16:17:28 GMT
+server: nginx/1.1.19
+strict-transport-security: max-age=604800
+x-frame-options: SAMEORIGIN
+x-sprintly-item-count: 1
+x-trace: 1BD35DE2D1F91801F09F4319CA79E38FFB24D4387B8D899C763531629B
+content-length: 939
+connection: keep-alive
+
+[{"status":"backlog","sort":90000,"product":{"archived":false,"id":33921,"name":"My First Product"},"description":"","tags":[],"short_url":"http://sprint.ly/i/33921/19/","who":"user","number":19,"deployed_to":[],"last_modified":"2015-08-14T15:13:16+00:00","counts":{"blockers":0,"blocking":0,"favorites":0,"comments":0},"why":"I can test the API","what":"a test item","title":"As a user, I want a test item so that I can test the API.","created_at":"2015-08-14T15:05:55+00:00","created_by":{"first_name":"Jeff","last_name":"Loiselle","created_at":"2015-08-14T14:34:10+00:00","account":{"active":true,"pk":20726,"created":"2015-08-14T14:34:11+00:00"},"email":"jeff+tuddy@loiselles.com","last_login":"2015-08-14T14:34:27+00:00","id":39098},"score":"~","assigned_to":null,"progress":{"triaged_at":"2015-08-14T15:13:16+00:00"},"type":"story","email":{"files":"files-1172834@items.sprint.ly","discussion":"discussion-1172834@items.sprint.ly"}}]

@@ -29,7 +29,7 @@ describe('Github', () => {
     });
   });
   describe('#push', () => {
-    it('should be able to pull stories', (done) => {
+    it('should be able to push stories', (done) => {
       let integration = { repo: 'tuddy', user: 'tudddy', access_token: 'c136002525ae2a82dec9109c304167226f8f7e7e' };
       var github = new Github(integration);
       let stories = [
@@ -47,7 +47,7 @@ describe('Github', () => {
     });
   });
   describe('#pull', () => {
-    it('should be able to push stories', (done) => {
+    it('should be able to pull stories', (done) => {
       let integration = { repo: 'tuddy', user: 'tudddy', access_token: 'c136002525ae2a82dec9109c304167226f8f7e7e' };
       var github = new Github(integration);
       github.pull().then((stories) => {

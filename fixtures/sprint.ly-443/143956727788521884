@@ -1,0 +1,16 @@
+POST /api/products/33921/items.json
+authorization: Basic amVmZit0dWRkeUBsb2lzZWxsZXMuY29tOldIQ1J2eGRqRTZhcHRuQmZqWjgzWldhVlFFam43R2VG
+host: sprint.ly
+accept: application/json
+content-type: application/json
+body: {\"title\":\"test4\",\"type\":\"story\"}
+
+HTTP/1.1 400 undefined
+content-type: application/json
+date: Fri, 14 Aug 2015 15:47:57 GMT
+server: nginx/1.1.19
+x-frame-options: SAMEORIGIN
+content-length: 53
+connection: keep-alive
+
+{"message":"type is a required argument.","code":400}
