@@ -8,7 +8,7 @@
 
 ```javascript
 
-var client = new tuddy();
+var client = tuddy();
 
 client.registerIntegration({ name: 'myTello', type: 'trello', key: '', token: '', board_id: ''});
 
