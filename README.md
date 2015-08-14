@@ -40,3 +40,20 @@ client.pull('myPivotal').then((stories) => {
 });
 
 ```
+
+**If you would like to push data to an integration:**
+
+```javascript
+
+var stories = [
+  {
+    name: 'I love creating Trello cards',
+    description: 'Writing cards to any system using the same format is fun.'
+  }
+];
+
+client.push('myTrello', stories).then((result) => {
+   console.log(result);
+});
+
+```

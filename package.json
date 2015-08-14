@@ -1,6 +1,6 @@
 {
   "name": "tuddy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Import, export, sync Pivotal Tracker, GitHub Issues, Trello, and all Super Common Story Format compatible mapped systems",
   "repository": {
     "type": "git",
