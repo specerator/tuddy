@@ -10,15 +10,15 @@
 
 var client = tuddy();
 
-client.registerIntegration({ name: 'myTello', type: 'trello', key: '', token: '', board_id: ''});
+client.addIntegration({ name: 'myTello', type: 'trello', key: '', token: '', board_id: ''});
 
-client.registerIntegration({ name: 'myGithub', type: 'github', user: '', repo: '', access_token: ''});
+client.addIntegration({ name: 'myGithub', type: 'github', user: '', repo: '', access_token: ''});
 
-client.registerIntegration({ name: 'myJira', type: 'jira', host: '', username: '', password: ''});
+client.addIntegration({ name: 'myJira', type: 'jira', host: '', username: '', password: ''});
 
-client.registerIntegration({ name: 'myPivotal', type: 'pivotal', project: '', token: ''});
+client.addIntegration({ name: 'myPivotal', type: 'pivotal', project: '', token: ''});
 
-client.registerIntegration({ name: 'mySprintly', type: 'sprintly', email: '', key: ''});
+client.addIntegration({ name: 'mySprintly', type: 'sprintly', email: '', key: ''});
 ```
 
 **If you would like to pull data from an integration:**
