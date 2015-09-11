@@ -1,0 +1,28 @@
+POST /1/cards
+host: api.trello.com
+accept: application/json
+content-type: application/json
+body: {\"name\":\"test1\",\"shortLink\":null,\"url\":null,\"desc\":null,\"shortUrl\":null,\"email\":null,\"due\":null,\"dateLastActivity\":null,\"closed\":false,\"key\":\"87105c2d4268dd05af77c83b64326f8a\",\"token\":\"e6691ee3114053746f53504df00a736407b985ce3cd0b2957012fa702ce83065\"}
+
+HTTP/1.1 400 undefined
+cache-control: max-age=0, must-revalidate, no-cache, no-store
+x-content-type-options: nosniff
+strict-transport-security: max-age=15768000
+x-xss-protection: 1; mode=block
+x-frame-options: DENY
+x-trello-version: 1.473.0
+x-trello-environment: Production
+access-control-allow-origin: *
+access-control-allow-methods: GET, PUT, POST, DELETE
+expires: Thu, 01 Jan 1970 00:00:00
+content-type: text/plain; charset=utf-8
+content-length: 24
+etag: W/"18-94168df7"
+vary: Accept-Encoding
+date: Fri, 11 Sep 2015 18:38:52 GMT
+set-cookie: visid_incap_168562=Ln4aPqy2TfK+eTNhwCFvzrwf81UAAAAAQUIPAAAAAABnvQ03tOaYghk7aWi8rULC; expires=Sun, 10 Sep 2017 08:26:21 GMT; path=/; Domain=.trello.com
+set-cookie: incap_ses_163_168562=PR1caXD6pym4MiUw3RdDArwf81UAAAAAsbbSqn6VwZ5jqx+L2IYeHQ==; path=/; Domain=.trello.com
+x-iinfo: 10-124770097-124686074 PNNN RT(1441996731983 46) q(0 0 0 10) r(1 1) U6
+x-cdn: Incapsula
+
+invalid value for idList

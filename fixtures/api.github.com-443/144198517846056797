@@ -1,0 +1,27 @@
+POST /repos/tudddy/tuddy/issues?access_token=c136002525ae2a82dec9109c304167226f8f7e7e
+content-type: application/json
+host: api.github.com
+accept: application/json
+body: {\"name\":\"test4\",\"description\":null,\"story_type\":\"feature\"}
+
+HTTP/1.1 401 undefined
+server: GitHub.com
+date: Fri, 11 Sep 2015 15:26:18 GMT
+content-type: application/json; charset=utf-8
+content-length: 83
+status: 401 Unauthorized
+x-github-media-type: github.v3
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 58
+x-ratelimit-reset: 1441988778
+x-xss-protection: 1; mode=block
+x-frame-options: deny
+content-security-policy: default-src 'none'
+access-control-allow-credentials: true
+access-control-expose-headers: ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+access-control-allow-origin: *
+x-github-request-id: 183D2EF0:19DA:BE3FA31:55F2F29A
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-content-type-options: nosniff
+
+{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}

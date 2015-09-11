@@ -4,7 +4,7 @@
 
 ## EXPERIMENTAL
 
-*Export, import, synchronize, stories, tasks, todos, such as Trello, Pivotal Tracker, JIRA, Github, Sprintly, etc.*
+*Export, import, synchronize, stories, tasks, todos, such as Trello, Pivotal Tracker, JIRA, Github, Teuxdeux, etc.*
 
 ```javascript
 
@@ -18,7 +18,7 @@ client.addIntegration({ name: 'myJira', type: 'jira', host: '', username: '', pa
 
 client.addIntegration({ name: 'myPivotal', type: 'pivotal', project: '', token: ''});
 
-client.addIntegration({ name: 'mySprintly', type: 'sprintly', email: '', key: ''});
+client.addIntegration({ name: 'myTeuxdeux', type: 'teuxdeux', username: '', password: ''})
 ```
 
 **If you would like to pull data from an integration:**
@@ -41,7 +41,7 @@ client.pull('myPivotal').then((stories) => {
    console.log(stories);
 });
 
-client.pull('mySprintly').then((stories) => {
+client.pull('myTeuxdeux').then((stories) => {
    console.log(stories);
 });
 
@@ -70,21 +70,30 @@ Super Common Story Format (SCSF) is an experimental attempt to unify task system
 
 ## EXPERIMENTAL
 
-
-|  **Field** | **Description** | **Example** | **JIRA** | **Trello** | **Pivotal** | **GitHub** |
-|  ------ | ------ | ------ | ------ | ------ | ------ | ------ |
-|  **id** | unique identifier | 237623762 | id | id | id | id |
-|  **self** | API url for item | http://example.com/api/item/5 | self | - | - | url |
-|  **key** | alternate unique identifier | TSK-01 | key | idShort |  | number |
-|  **source** | name of source | trello |  | "trello" |  | "github" |
-|  **name** | summary of the item | do a thing | fields.summary | name | name | title |
-|  **description** | full description of the item | We want do a thing not because it is easy but because it is hard. | fields.description | desc |  | body |
-|  **project** | parent identifier | 347632746 | fields.project.id | idBoard | project_id | this.integration.repo |
-|  **type** | type of item | task | issue | bug | feature | story | issuetype.name | - | kind |  |
-|  **url** | url for item in it's native UI | http://example.com/item/5 |  | url | urk | html_url |
-|  **archived** | is item archived indicator | yes | no |  |  | - |  |
-|  **status** | working status of item | open | closed | backlog | current |  |  | current_state | state |
-|  **due** | datetime item is due | 2015-08-14T15:05:55+00:00 | fields.duedate | due |  |  |
-|  **completedAt** | datetime item was completed | 2015-08-14T15:05:55+00:00 |  |  |  | closed_at |
-|  **createdAt** | datetime item was created | 2015-08-14T15:05:55+00:00 | fields.created | dateLastActivity | created_at | created_at |
-|  **updatedAt** | datetime item was last updated | 2015-08-14T15:05:55+00:00 | fields.updated | dateLastActivity | updated_at | updated_at |
+|  **Field** | **Description** | **Example** | **JIRA** | **Trello** | **Pivotal** | **GitHub** | **Teuxdeux** |
+|  ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+|  **meta.source.name** | A text identifier of the source service | trello |  | "trello" |  |  |  |
+|  **meta.source.data** | Array of data from source |  |  |  |  |  |  |
+|  **data.id** | unique identifier | 237623762 | id | id | id | id | id |
+|  **data.self** | API url for item | http://example.com/api/item/5 | self | - | - | url | - |
+|  **data.key** | alternate unique identifier | TSK-01 | key | idShort |  | number | uuid |
+|  **data.name** | summary of the item | do a thing | fields.summary | name | name | title | text |
+|  **data.description** | full description of the item | We want do a thing not because it is easy but because it is hard. | fields.description | desc |  | body | - |
+|  **data.project.id** | parent identifier | 347632746 | fields.project.id | idBoard | project_id | this.integration.repo |  |
+|  **data.type** | type of item | task | issue | bug | feature | story | issuetype.name | - | kind |  |  |
+|  **data.url** | url for item in it's native UI | http://example.com/item/5 |  | url | urk | html_url |  |
+|  **data.archived** | is item archived indicator | yes | no |  |  | - |  |  |
+|  **data.status** | working status of item | open | closed | backlog | current |  |  | current_state | state | done |
+|  **data.date.start** | datetime and item should begin |  |  |  |  |  |  |
+|  **data.date.end** | synonomous to date.due |  |  |  |  |  |  |
+|  **data.date.due** | datetime item is due | 2015-08-14T15:05:55+00:00 | fields.duedate | due |  |  |  |
+|  **data.date.completed** | datetime item was completed | 2015-08-14T15:05:55+00:00 |  |  |  | closed_at |  |
+|  **data.date.created** | datetime item was created | 2015-08-14T15:05:55+00:00 | fields.created | dateLastActivity | created_at | created_at |  |
+|  **data.date.updated** | datetime item was last updated | 2015-08-14T15:05:55+00:00 | fields.updated | dateLastActivity | updated_at | updated_at | deletedAt |
+|  **data.date.deleted** | datetime and item was deleted |  |  |  |  |  | start_date |
+|  **data.lists** | array of lists/columns to which the story belongs |  |  |  |  |  |  |
+|  **data.lists.list.id** |  |  |  |  |  |  |  |
+|  **data.lists.list.position** |  |  |  |  |  |  |  |
+|  **data.labels** |  |  |  |  |  |  |  |
+|  **data.email** |  |  |  |  |  |  |  |
+|  **data.shortUrl** |  |  |  |  |  |  |  |

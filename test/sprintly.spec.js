@@ -28,37 +28,33 @@ describe('Sprintly', () => {
   //     expect(url).to.eql('https://api.Sprintly.com/repos/tudddy/tuddy/issues?per_page=thing');
   //   });
   // });
-  // describe('#push', () => {
-  //   it('should be able to push stories', (done) => {
-  //
-  //     var sprintly = new Sprintly({
-  //       product: '33921',
-  //       email: 'jeff+tuddy@loiselles.com',
-  //       key: 'WHCRvxdjE6aptnBfjZ83ZWaVQEjn7GeF'
-  //     });
-  //
-  //     let stories = [
-  //       {
-  //         type: 'task',
-  //         name: 'test3',
-  //         description: 'hello',
-  //         status: 'backlog'
-  //       },
-  //       {
-  //         type: 'task',
-  //         name: 'test4',
-  //         description: 'hello',
-  //         status: 'backlog'
-  //       }
-  //     ];
-  //
-  //     sprintly.push(stories).then((stories) => {
-  //       debugger;
-  //       expect(stories).to.have.length(1);
-  //       done();
-  //     })
-  //   });
-  // });
+  describe('#push', () => {
+    it('should be able to push stories', (done) => {
+
+      var sprintly = new Sprintly({
+        product: '33921',
+        email: 'jeff+tuddy@loiselles.com',
+        key: 'WHCRvxdjE6aptnBfjZ83ZWaVQEjn7GeF'
+      });
+
+      let stories = [
+        {
+          type: 'task',
+          name: 'test3'
+        },
+        {
+          type: 'task',
+          name: 'test4'
+        }
+      ];
+
+      sprintly.push(stories).then((stories) => {
+        debugger;
+        expect(stories).to.have.length(1);
+        done();
+      })
+    });
+  });
   describe('#pull', () => {
     it('should be able to pull stories', (done) => {
       var sprintly = new Sprintly({
