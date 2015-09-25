@@ -1,13 +1,13 @@
 {
   "name": "tuddy",
-  "version": "1.0.0-alpha",
-  "description": "Import, export, sync Pivotal Tracker, GitHub Issues, Trello, and all Super Common Story Format compatible mapped systems",
+  "version": "1.1.0",
+  "description": "Import, export, synchronize Pivotal Tracker, GitHub Issues, Trello, JIRA, Teuxdeux, and all Super Common Story Format compatible mapped systems",
   "repository": {
     "type": "git",
     "url": "https://github.com/specerator/tuddy"
   },
   "homepage": "http://specerator.com",
-  "main": "index.js",
+  "main": "dist/tuddy.js",
   "scripts": {
     "test": "REPLAY=record mocha --compilers js:babel/register test/"
   },
@@ -16,6 +16,8 @@
   "devDependencies": {
     "babel": "^5.8.21",
     "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
     "mocha": "^2.2.5",
     "replay": "^2.0.6",
     "sinon": "^1.15.4"
