@@ -1,0 +1,17 @@
+POST /login
+host: teuxdeux.com
+content-type: application/x-www-form-urlencoded
+body: username=tuddy&password=tuddypass&authenticity_token=d151f2a1c31d5b5374f64112be07c3cd637b9f8b6450fa54ee3dd492948eed0c
+
+HTTP/1.1 302 Found
+content-type: text/html;charset=utf-8
+date: Mon, 28 Sep 2015 12:27:53 GMT
+location: https://teuxdeux.com/
+server: nginx/1.2.1
+set-cookie: rack.session=BAh7CUkiD3Nlc3Npb25faWQGOgZFRiJFNTA4YWZiZDdlZTdjOTViOWQ2YThi%0AZDg0ZDI5ODI1MmFlYThmNzMwNjcwMjdmMThiMWRlYTgyYTg1NDI5ZmNlNEki%0ADl9fRkxBU0hfXwY7AEZ7AEkiCWNzcmYGOwBGIkVkMTUxZjJhMWMzMWQ1YjUz%0ANzRmNjQxMTJiZTA3YzNjZDYzN2I5ZjhiNjQ1MGZhNTRlZTNkZDQ5Mjk0OGVl%0AZDBjSSIMdXNlcl9pZAY7AEZpAizW%0A--fae485c6811e7ef3d7c07d25450f0f0e814f5570; path=/; expires=Wed, 28 Oct 2015 12:27:53 -0000; secure; HttpOnly
+status: 302 Found
+x-frame-options: sameorigin, SAMEORIGIN
+x-xss-protection: 1; mode=block
+content-length: 0
+connection: Close
+

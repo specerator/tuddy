@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
 
-var tuddy = require('../tuddy');
+var tuddy = require('../lib/tuddy');
 
 describe('Tuddy', () => {
   describe('#constructor', () => {

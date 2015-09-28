@@ -124,7 +124,7 @@ var Teuxdeux = (function () {
             return false;
           }
         })(data),
-        current_date: data.date.start,
+        current_date: data.date.start || new Date(),
         created_at: data.date.created,
         updated_at: data.date.updated
       };
@@ -156,10 +156,10 @@ var Teuxdeux = (function () {
               return 'incomplete';
             }
           })(data),
-          createdAt: data.created_at,
-          updatedAt: data.updated_at,
           date: {
-            start: data.start_date
+            start: data.start_date,
+            created: data.created_at,
+            updated: data.updated_at
           }
         }
       };

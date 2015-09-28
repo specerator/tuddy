@@ -1,16 +1,16 @@
 GET /login
 host: teuxdeux.com
 
-HTTP/1.1 200 undefined
+HTTP/1.1 200 OK
 content-type: text/html;charset=utf-8
-date: Fri, 11 Sep 2015 15:05:40 GMT
+date: Mon, 28 Sep 2015 12:27:52 GMT
 server: nginx/1.2.1
-set-cookie: rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFMzFjOThiNTdiYmFiNWZiYzkyMzAw%0ANzYwMjQ4OTZlNjA5ZTE4MGY1ZWFhYTA5MGQyYjExNDc0MDhmNDYwOWI3M0ki%0ADl9fRkxBU0hfXwY7AEZ7AEkiCWNzcmYGOwBGIkUzNWNkMWQ5YThjMjdmYjNh%0ANmMyZDFmNmU1NWZhNjJiNDZjZGM5NTU2MjBkZGY0MDQ1MWU3NDEzYmY0ZWM2%0ANTNk%0A--eeecca67b95d061bb1c19b94c191bd33ad8f47f8; path=/; expires=Sun, 11 Oct 2015 15:05:40 -0000; secure; HttpOnly
+set-cookie: rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFNTA4YWZiZDdlZTdjOTViOWQ2YThi%0AZDg0ZDI5ODI1MmFlYThmNzMwNjcwMjdmMThiMWRlYTgyYTg1NDI5ZmNlNEki%0ADl9fRkxBU0hfXwY7AEZ7AEkiCWNzcmYGOwBGIkVkMTUxZjJhMWMzMWQ1YjUz%0ANzRmNjQxMTJiZTA3YzNjZDYzN2I5ZjhiNjQ1MGZhNTRlZTNkZDQ5Mjk0OGVl%0AZDBj%0A--5812153e55331c8d0ee375c1a31ca7e8fb682d6d; path=/; expires=Wed, 28 Oct 2015 12:27:52 -0000; secure; HttpOnly
 status: 200 OK
 x-frame-options: sameorigin, SAMEORIGIN
 x-xss-protection: 1; mode=block
 content-length: 6685
-connection: keep-alive
+connection: Close
 
 <!DOCTYPE html>
 <html>
@@ -101,7 +101,7 @@ connection: keep-alive
           <span class='webfont'>Login</span>
         </h2>
         <form action='/login' id='login-form' method='POST'>
-          <input type="hidden" name="authenticity_token" value="35cd1d9a8c27fb3a6c2d1f6e55fa62b46cdc955620ddf40451e7413bf4ec653d">
+          <input type="hidden" name="authenticity_token" value="d151f2a1c31d5b5374f64112be07c3cd637b9f8b6450fa54ee3dd492948eed0c">
           <table>
             <tr>
               <td class='form-label-cell'>

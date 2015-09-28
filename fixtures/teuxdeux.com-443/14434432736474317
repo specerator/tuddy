@@ -1,0 +1,19 @@
+POST /api/v1/todos
+x-csrf-token: d151f2a1c31d5b5374f64112be07c3cd637b9f8b6450fa54ee3dd492948eed0c
+host: teuxdeux.com
+content-type: application/x-www-form-urlencoded
+accept: application/json
+body: id=&text=test3&uuid=&done=false&current_date=2015-09-11&created_at=&updated_at=
+
+HTTP/1.1 201 Created
+content-type: application/json; charset=UTF-8
+date: Mon, 28 Sep 2015 12:27:53 GMT
+server: nginx/1.2.1
+set-cookie: rack.session=BAh7CUkiD3Nlc3Npb25faWQGOgZFRiJFNTA4YWZiZDdlZTdjOTViOWQ2YThi%0AZDg0ZDI5ODI1MmFlYThmNzMwNjcwMjdmMThiMWRlYTgyYTg1NDI5ZmNlNEki%0ADl9fRkxBU0hfXwY7AEZ7AEkiCWNzcmYGOwBGIkVkMTUxZjJhMWMzMWQ1YjUz%0ANzRmNjQxMTJiZTA3YzNjZDYzN2I5ZjhiNjQ1MGZhNTRlZTNkZDQ5Mjk0OGVl%0AZDBjSSIMdXNlcl9pZAY7AEZpAizW%0A--fae485c6811e7ef3d7c07d25450f0f0e814f5570; path=/; expires=Wed, 28 Oct 2015 12:27:53 -0000; secure; HttpOnly
+status: 201 Created
+x-frame-options: sameorigin
+x-xss-protection: 1; mode=block
+content-length: 461
+connection: Close
+
+{"id":34800618,"cid":null,"uuid":"3ef6698d-2d53-4d4d-b11c-8066d1635320","text":"test3","position":1,"list_id":null,"start_date":"2015-09-11","current_date":"2015-09-11","done":false,"user_id":54828,"recurring_todo_id":null,"recurring":false,"created_at":"2015-09-28T12:27:53+00:00","updated_at":"2015-09-28T12:27:53+00:00","text_updated_at":null,"done_updated_at":null,"position_updated_at":null,"column_updated_at":null,"deleted_at":null,"recurring_todo":null}

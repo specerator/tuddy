@@ -33,7 +33,7 @@ describe('Teuxdeux', () => {
       let integration = { username: 'tuddy', password: 'tuddypass' };
       var teuxdeux = new Teuxdeux(integration);
       teuxdeux.pull().then((stories) => {
-        expect(stories).to.have.length(4);
+        expect(stories).to.have.length(6);
         done();
       });
     });
