@@ -98,7 +98,7 @@ var Teuxdeux = (function () {
             json: true,
             headers: { 'x-csrf-token': _this2.integration.authenticity_token }
           }).spread(function (res, body) {
-            out.push(body);
+            out.push(Teuxdeux.toSCSF(body));
           });
         })).then(function () {
           return out;
