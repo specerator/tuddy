@@ -63,14 +63,13 @@ var Trello = (function () {
 
       return Promise.all(stories.map(function (story) {
         var t = new trello(_this2.integration.key, _this2.integration.token);
-        story.idList = _this2.integration.idList;
+        var data = Trello.toTrello(story);
+        data.idList = _this2.integration.idList;
         return new Promise(function (resolve, reject) {
-          return t.post('/1/cards', Trello.toTrello(story), function (err, body) {
+          return t.post('/1/cards', data, function (err, body) {
             if (err) {
               return reject(err);
             }
-            body.fk = body.id;
-            body.id = story.id;
             return resolve(Trello.toSCSF(body));
           });
         });

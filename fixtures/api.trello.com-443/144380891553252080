@@ -1,0 +1,30 @@
+POST /1/cards
+host: api.trello.com
+accept: application/json
+content-type: application/json
+body: {\"name\":\"test2\",\"shortLink\":null,\"url\":null,\"desc\":null,\"shortUrl\":null,\"email\":null,\"due\":null,\"dateLastActivity\":null,\"closed\":false,\"idList\":\"55ccc4a5e08262688ef56a96\",\"key\":\"87105c2d4268dd05af77c83b64326f8a\",\"token\":\"e6691ee3114053746f53504df00a736407b985ce3cd0b2957012fa702ce83065\"}
+
+HTTP/1.1 200 OK
+cache-control: max-age=0, must-revalidate, no-cache, no-store
+x-content-type-options: nosniff
+strict-transport-security: max-age=15768000
+x-xss-protection: 1; mode=block
+x-frame-options: DENY
+x-trello-version: 1.486.0
+x-trello-environment: Production
+access-control-allow-origin: *
+access-control-allow-methods: GET, PUT, POST, DELETE
+x-server-time: 1443808915455
+expires: Thu, 01 Jan 1970 00:00:00
+content-type: application/json; charset=utf-8
+content-length: 793
+etag: W/"319-e0ef85c5"
+vary: Accept-Encoding
+date: Fri, 02 Oct 2015 18:01:55 GMT
+connection: close
+set-cookie: visid_incap_168562=iRhc+q/0QEyhoRyz/xb4dZLGDlYAAAAAQUIPAAAAAAAxaAhektZ9A3AmBUrzROUh; expires=Sun, 01 Oct 2017 11:06:25 GMT; path=/; Domain=.trello.com
+set-cookie: incap_ses_163_168562=qbcaBQ1BOXWUfnV95hdDApLGDlYAAAAA21ZxfdqmF34LUjCWzd4iHg==; path=/; Domain=.trello.com
+x-iinfo: 4-31680586-31680589 NNNN CT(7 9 0) RT(1443808914581 72) q(0 0 0 -1) r(2 2) U6
+x-cdn: Incapsula
+
+{"id":"560ec69362efc95c0d861452","badges":{"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"comments":0,"attachments":0,"description":false,"due":null},"checkItemStates":[],"closed":false,"dateLastActivity":"2015-10-02T18:01:55.396Z","desc":"","descData":{"emoji":{}},"due":null,"email":"tuddy2+55ccc162f6f892ec7d80b27f+560ec69362efc95c0d861452+8161dcbbd20c537245e921c9c358c81c714c5ef4@boards.trello.com","idBoard":"55ccc49df22b549c64f3b91e","idChecklists":[],"idLabels":[],"idList":"55ccc4a5e08262688ef56a96","idMembers":[],"idShort":6,"idAttachmentCover":null,"manualCoverAttachment":false,"labels":[],"name":"test2","pos":196607,"shortUrl":"https://trello.com/c/h8CJ9Cs1","url":"https://trello.com/c/h8CJ9Cs1/6-test2","stickers":[]}
