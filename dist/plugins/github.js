@@ -75,11 +75,8 @@ var Github = (function () {
           var github = Github.toGithub(story);
           request.post({ url: that.url(), json: true, headers: that.headers, body: github }, function (err, response, body) {
             if (err) {
-              console.log(err);
               callback(new Error(err));
             }
-            body.fk = body.id;
-            body.id = story.id;
             out.push(body);
             callback();
           });
@@ -129,8 +126,6 @@ var Github = (function () {
             body = [];
           }
           body.forEach(function (story) {
-            story.fk = story.id;
-            story.id = null;
             stories.push(Github.toSCSF(story));
           });
           if (typeof page != 'undefined' && page.next) {
@@ -157,7 +152,7 @@ var Github = (function () {
       var data = merged.data;
       return {
         id: data.id,
-        name: data.name,
+        title: data.name,
         body: data.description,
         story_type: "feature",
         url: data.self,
