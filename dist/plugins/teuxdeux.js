@@ -160,7 +160,7 @@ var Teuxdeux = (function () {
             }
           })(data),
           date: {
-            start: data.start_date,
+            start: data.current_date,
             created: data.created_at,
             updated: data.updated_at
           }
