@@ -74,13 +74,10 @@ var Sprintly = (function () {
       var _this = this;
 
       return Promise.all(stories.map(function (story) {
-        console.log(Sprintly.toSprintly(story));
         var a = { url: _this.url(), headers: _this.headers, formData: Sprintly.toSprintly(story) };
-        debugger;
-        return request.post({ url: _this.url(), headers: _this.headers, form: Sprintly.toSprintly(story) }).spread(function (res, body) {
-          debugger;
+        return request.post({ url: _this.url(), headers: _this.headers, formData: Sprintly.toSprintly(story) }).spread(function (res, body) {
           if (res.statusCode == 200) {
-            return JSON.parse(body).map(Sprintly.toSCSF);
+            return Sprintly.toSCSF(JSON.parse(body));
           } else {
             throw new Error(res.statusMessage);
           }
@@ -188,16 +185,28 @@ var Sprintly = (function () {
     key: 'toSCSF',
     value: function toSCSF(data) {
       return {
-        _source: 'sprintly',
-        id: data.number,
-        project: data.product.id,
-        url: data.short_url,
-        name: data.title,
-        description: data.description,
-        createdAt: data.created_at,
-        updatedAt: data.last_modified,
-        status: data.status,
-        _data: data
+        meta: {
+          source: {
+            name: 'github'
+          }
+        },
+        data: {
+          id: data.number,
+          name: data.title,
+          description: data.description,
+          type: data.type,
+          url: data.short_url,
+          short_url: data.short_url,
+          status: data.status,
+          date: {
+            created: data.created_at,
+            updated: data.updated_at
+          },
+          project: {
+            id: data.product.id,
+            name: data.product.name
+          }
+        }
       };
     }
   }]);

@@ -4,7 +4,7 @@
 
 ## EXPERIMENTAL
 
-*Export, import, synchronize, stories, tasks, todos, such as Trello, Pivotal Tracker, JIRA, Github, Teuxdeux, etc.*
+*Export, import, synchronize, stories, tasks, todos, such as Trello, Pivotal Tracker, JIRA, Github, Sprintly, Teuxdeux, etc.*
 
 ```javascript
 
@@ -19,6 +19,8 @@ client.addIntegration({ name: 'myJira', type: 'jira', host: '', username: '', pa
 client.addIntegration({ name: 'myPivotal', type: 'pivotal', project: '', token: ''});
 
 client.addIntegration({ name: 'myTeuxdeux', type: 'teuxdeux', username: '', password: ''})
+
+client.addIntegration({ name: 'mySprintly', type: 'sprintly', product: '', email: '', key: ''})
 ```
 
 **If you would like to pull data from an integration:**
@@ -45,6 +47,9 @@ client.pull('myTeuxdeux').then((stories) => {
    console.log(stories);
 });
 
+client.pull('mySprintly').then((stories) => {
+   console.log(stories);
+});
 ```
 
 **If you would like to push data to an integration:**

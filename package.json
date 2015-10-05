@@ -1,7 +1,7 @@
 {
   "name": "tuddy",
-  "version": "1.1.7",
-  "description": "Import, export, synchronize Pivotal Tracker, GitHub Issues, Trello, JIRA, Teuxdeux, and all Super Common Story Format compatible mapped systems",
+  "version": "1.1.8",
+  "description": "Import, export, synchronize Pivotal Tracker, GitHub Issues, Trello, JIRA, Sprintly, Teuxdeux, and all Super Common Story Format compatible mapped systems",
   "repository": {
     "type": "git",
     "url": "https://github.com/specerator/tuddy"

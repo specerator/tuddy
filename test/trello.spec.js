@@ -45,43 +45,32 @@ describe('Trello', () => {
         id: '55ccc4a9d3294f7a68cc90f3'
       };
 
-      var expected = {
-        meta: {
-          source: {
-            id: null,
-            name: 'trello',
-            key: null
-          }
-        },
-        data: {
-          id: '55ccc4a9d3294f7a68cc90f3',
-          self: null,
-          key: 'ZNUzB6mn',
-          name: 'test1',
-          description: '',
-          type: null,
-          url: 'https://trello.com/c/ZNUzB6mn/1-test1',
-          archived: null,
-          status: 'incomplete',
-          email: 'tuddy@example.com',
-          short_url: 'https://trello.com/c/ZNUzB6mn',
-          date: {
-            start: null,
-            end: null,
-            due: null,
-            created: null,
-            updated: '2015-08-13T16:24:09.303Z',
-            completed: null,
-            deleted: null
-          },
-          lists: [],
-          labels: [],
-          project: {
-            id: null
-          },
-          users: []
-        }
-      };
+      var expected = { meta: { source: { id: null, name: 'trello', key: null } },
+      data:
+      { id: '55ccc4a9d3294f7a68cc90f3',
+      self: null,
+      key: 'ZNUzB6mn',
+      name: 'test1',
+      description: '',
+      type: null,
+      url: 'https://trello.com/c/ZNUzB6mn/1-test1',
+      archived: null,
+      status: 'incomplete',
+      email: 'tuddy@example.com',
+      short_url: 'https://trello.com/c/ZNUzB6mn',
+      date:
+      { start: null,
+        end: null,
+        due: null,
+        created: null,
+        updated: '2015-08-13T16:24:09.303Z',
+        completed: null,
+        deleted: null },
+        lists: [],
+        labels: [],
+        project: { id: null },
+        document: { id: null, range: null },
+        users: [] } }
 
       var story = Trello.toSCSF(trello);
       expect(story.meta.source.data).to.be.an('object');

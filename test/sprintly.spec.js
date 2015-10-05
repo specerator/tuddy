@@ -49,8 +49,7 @@ describe('Sprintly', () => {
       ];
 
       sprintly.push(stories).then((stories) => {
-        debugger;
-        expect(stories).to.have.length(1);
+        expect(stories).to.have.length(2);
         done();
       })
     });

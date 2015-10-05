@@ -1,0 +1,28 @@
+POST /repos/tudddy/tuddy/issues?access_token=c136002525ae2a82dec9109c304167226f8f7e7e
+content-type: application/json
+host: api.github.com
+accept: application/json
+body: {\"id\":null,\"title\":\"test3\",\"body\":null,\"story_type\":\"feature\",\"url\":null,\"html_url\":null,\"created_at\":null,\"updated_at\":null,\"closed_at\":null,\"number\":null,\"state\":\"closed\"}
+
+HTTP/1.1 401 Unauthorized
+server: GitHub.com
+date: Mon, 05 Oct 2015 11:51:37 GMT
+content-type: application/json; charset=utf-8
+content-length: 83
+connection: close
+status: 401 Unauthorized
+x-github-media-type: github.v3
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 59
+x-ratelimit-reset: 1444049497
+x-xss-protection: 1; mode=block
+x-frame-options: deny
+content-security-policy: default-src 'none'
+access-control-allow-credentials: true
+access-control-expose-headers: ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+access-control-allow-origin: *
+x-github-request-id: 183D2EF0:17F57:77F756F:56126449
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-content-type-options: nosniff
+
+{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}

@@ -128,43 +128,32 @@ describe('Jira', () => {
         }
       }
 
-      var expected = {
-        meta: {
-          source: {
-            id: null,
-            name: 'jira',
-            key: null
-          }
-        },
-        data: {
-          id: '10036',
-          self: 'https://tudddy.atlassian.net/rest/api/2/issue/10036',
-          key: 'TUD-37',
-          name: 'test3',
-          description: null,
-          type: 'Task',
-          url: null,
-          archived: null,
-          status: null,
-          email: null,
-          short_url: null,
-          date: {
-            start: null,
-            end: null,
-            due: null,
-            created: '2015-08-13T17:32:12.000-0400',
-            updated: '2015-08-13T17:32:12.000-0400',
-            completed: null,
-            deleted: null
-          },
-          lists: [],
-          labels: [],
-          project: {
-            id: '10000'
-          },
-          users: []
-        }
-      }
+      var expected = { meta: { source: { id: null, name: 'jira', key: null } },
+      data:
+      { id: '10036',
+      self: 'https://tudddy.atlassian.net/rest/api/2/issue/10036',
+      key: 'TUD-37',
+      name: 'test3',
+      description: null,
+      type: 'Task',
+      url: null,
+      archived: null,
+      status: null,
+      email: null,
+      short_url: null,
+      date:
+      { start: null,
+        end: null,
+        due: null,
+        created: '2015-08-13T17:32:12.000-0400',
+        updated: '2015-08-13T17:32:12.000-0400',
+        completed: null,
+        deleted: null },
+        lists: [],
+        labels: [],
+        project: { id: '10000' },
+        document: { id: null, range: null },
+        users: [] } };
 
       var story = Jira.toSCSF(jira);
       expect(story.meta.source.data).to.be.an('object');

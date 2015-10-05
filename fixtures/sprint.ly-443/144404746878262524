@@ -1,0 +1,16 @@
+POST /api/products/33921/items.json
+authorization: Basic amVmZit0dWRkeUBsb2lzZWxsZXMuY29tOldIQ1J2eGRqRTZhcHRuQmZqWjgzWldhVlFFam43R2VG
+host: sprint.ly
+content-type: multipart/form-data; boundary=--------------------------003941013001474839841555
+body: ----------------------------003941013001474839841555\r\nContent-Disposition: form-data; name=\"title\"\r\n\r\ntest3\r\n----------------------------003941013001474839841555\r\nContent-Disposition: form-data; name=\"type\"\r\n\r\ntask\r\n----------------------------003941013001474839841555--\r\n
+
+HTTP/1.1 200 OK
+content-type: application/json
+date: Mon, 05 Oct 2015 12:17:48 GMT
+server: nginx/1.1.19
+strict-transport-security: max-age=604800
+x-frame-options: SAMEORIGIN
+content-length: 767
+connection: Close
+
+{"status":"someday","sort":50000,"product":{"archived":false,"id":33921,"name":"My First Product"},"description":"","tags":[],"short_url":"http://sprint.ly/i/33921/7/","number":7,"deployed_to":[],"last_modified":"2015-10-05T12:17:48+00:00","counts":{"blockers":0,"blocking":0,"favorites":0,"comments":0},"title":"test3","created_at":"2015-10-05T12:17:48+00:00","created_by":{"first_name":"Jeff","last_name":"Loiselle","created_at":"2015-08-14T14:34:10+00:00","account":{"active":true,"pk":20726,"created":"2015-08-14T14:34:11+00:00"},"email":"jeff+tuddy@loiselles.com","last_login":"2015-10-05T12:04:37+00:00","id":39098},"score":"~","assigned_to":null,"type":"task","email":{"files":"files-1214702@items.sprint.ly","discussion":"discussion-1214702@items.sprint.ly"}}

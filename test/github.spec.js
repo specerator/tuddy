@@ -70,43 +70,32 @@ describe('Github', () => {
         body: null
       };
 
-      var expected = {
-        meta: {
-          source: {
-            id: null,
-            name: 'github',
-            key: null
-          }
-        },
-        data: {
-          id: 100812367,
-          self: 'https://api.github.com/repos/tudddy/tuddy/issues/4',
-          key: 4,
-          name: 'test3',
-          description: null,
-          type: null,
-          url: 'https://github.com/tudddy/tuddy/issues/4',
-          archived: null,
-          status: 'incomplete',
-          email: null,
-          short_url: null,
-          date: {
-            start: null,
-            end: null,
-            due: null,
-            created: '2015-08-13T16:23:05Z',
-            updated: '2015-08-13T16:23:05Z',
-            completed: null,
-            deleted: null
-          },
+      var expected = { meta: { source: { id: null, name: 'github', key: null } },
+      data:
+      { id: 100812367,
+        self: 'https://api.github.com/repos/tudddy/tuddy/issues/4',
+        key: 4,
+        name: 'test3',
+        description: null,
+        type: null,
+        url: 'https://github.com/tudddy/tuddy/issues/4',
+        archived: null,
+        status: 'incomplete',
+        email: null,
+        short_url: null,
+        date:
+        { start: null,
+          end: null,
+          due: null,
+          created: '2015-08-13T16:23:05Z',
+          updated: '2015-08-13T16:23:05Z',
+          completed: null,
+          deleted: null },
           lists: [],
           labels: [],
-          project: {
-            id: null
-          },
-          users: []
-        }
-      };
+          project: { id: null },
+          document: { id: null, range: null },
+          users: [] } };
 
       var story = Github.toSCSF(github);
       expect(story.meta.source.data).to.be.an('object');
@@ -147,7 +136,7 @@ describe('Github', () => {
       var github = Github.toGithub(scsf);
       var expected = {
         id: 100812367,
-        name: 'test3',
+        title: 'test3',
         body: 'description',
         story_type: 'feature',
         url: 'https://api.github.com/repos/tudddy/tuddy/issues/4',
